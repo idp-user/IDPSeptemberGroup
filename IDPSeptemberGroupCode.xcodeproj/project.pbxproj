@@ -26,6 +26,7 @@
 		5A2D6BA91BA729290056D643 /* IDPSeptemberGroupCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IDPSeptemberGroupCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2D6BAC1BA729290056D643 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5A2D6BB31BA72E8B0056D643 /* IDPMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPMacros.h; sourceTree = "<group>"; };
+		5A9405301BB30C5E0078C6AA /* IDPStudyPlan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IDPStudyPlan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 			children = (
 				5A2D6BAB1BA729290056D643 /* IDPSeptemberGroupCode */,
 				5A2D6BAA1BA729290056D643 /* Products */,
+				5A9405301BB30C5E0078C6AA /* IDPStudyPlan */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +240,7 @@
 				5A2D6BB21BA729290056D643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
