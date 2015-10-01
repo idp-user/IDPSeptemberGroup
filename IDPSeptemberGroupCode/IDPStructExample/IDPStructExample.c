@@ -37,6 +37,9 @@ typedef struct SomeOtherKindOfStruct {
     int value5;
 } SomeOtherStructType;
 
+static
+void IDPStructExampleUsage(void);
+
 #pragma mark -
 #pragma mark Public Implementations
 
