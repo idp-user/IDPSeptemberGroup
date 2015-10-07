@@ -114,15 +114,10 @@ IDPBirdObject *IDPBirdObjectPartner(IDPBirdObject *object) {
 }
 
 void IDPBirdObjectSetPartner(IDPBirdObject *object, IDPBirdObject *parnter) {
-    if (NULL != object) {
-//        if (object->_partner) {
-            IDPObjectRelease(object->_partner);
-            
-//            _IDPBirdObjectDeallocate(object->_partner); // BAD
-//            object->_partner = NULL;
-//        }
-        
-        object->_partner = parnter;
+    if (NULL != object && object->_partner != parnter) {
         IDPObjectRetain(parnter);
+        IDPObjectRelease(object->_partner);
+
+        object->_partner = parnter;
     }
 }
