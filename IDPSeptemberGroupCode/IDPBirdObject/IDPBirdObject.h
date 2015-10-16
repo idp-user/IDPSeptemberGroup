@@ -10,11 +10,19 @@
 #define __IDPSeptemberGroupCode__IDPBirdObject__
 
 #include <stdbool.h>
+#include "IDPObject.h"
 
 typedef struct IDPBirdObject IDPBirdObject;
 
+struct IDPBirdObject {
+    IDPObject _super;
+    char *_name;
+    IDPBirdObject *_partner;
+    bool _isAbleToFly;
+};
+
 IDPBirdObject *IDPBirdObjectCreate(void);
-void _IDPBirdObjectDeallocate(IDPBirdObject *object);
+void __IDPBirdObjectDeallocate(void *object);
 
 char *IDPBirdObjectName(IDPBirdObject *object);
 void IDPBirdObjectSetName(IDPBirdObject *object, char *name);

@@ -12,17 +12,13 @@
 #include <stdlib.h>
 #include <assert.h>
 
+#include "IDPObject.h"
+
 
 #pragma mark -
 #pragma mark Private Declarations
 
-struct IDPBirdObject {
-    char *_name;
-    IDPBirdObject *_partner;
-    bool _isAbleToFly;
-    
-    uint64_t _referenceCount;
-};
+
 
 static
 IDPBirdObject *IDPBirdObjectPartner(IDPBirdObject *object);
@@ -30,53 +26,28 @@ IDPBirdObject *IDPBirdObjectPartner(IDPBirdObject *object);
 static
 void IDPBirdObjectSetPartner(IDPBirdObject *object, IDPBirdObject *parnter);
 
-
-void IDPObjectRetain(IDPBirdObject *object) {
-    if (object) {
-        object->_referenceCount++;
-    }
-}
-
-void IDPObjectRelease(IDPBirdObject *object) {
-    if (NULL != object) {
-        if (0 == --(object->_referenceCount)) {
-            _IDPBirdObjectDeallocate(object);
-        }
-    }
-}
-
-
 #pragma mark -
 #pragma mark Public Implementations
 
 IDPBirdObject *IDPBirdObjectCreate(void) {
-    IDPBirdObject *result = calloc(1, sizeof(IDPBirdObject));
-    
-    assert(NULL != result);
-    
+    IDPBirdObject *result = IDPObjectCreateOfType(IDPBirdObject);
 //    result->_isAbleToFly = true; /// BAD PRACTICE!!!
     IDPBirdObjectSetAbleToFly(result, true);
     
     return result;
 }
 
-void _IDPBirdObjectDeallocate(IDPBirdObject *object) {
+void __IDPBirdObjectDeallocate(void *object) {
     IDPBirdObjectSetName(object, NULL);
-    
     IDPBirdObjectSetPartner(object, NULL);
     
-    free(object);
+    __IDPObjectDeallocate(object);
 }
 
 #pragma mark -
 #pragma mark Public Implementations
 
 char *IDPBirdObjectName(IDPBirdObject *object) {
-//    if (NULL == object) {
-//        return NULL;
-//    }
-//    
-//    return object->_name;
     return NULL != object ? object->_name : NULL;
 }
 
