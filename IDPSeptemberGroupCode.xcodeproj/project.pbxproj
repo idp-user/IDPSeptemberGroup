@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1046131BD151CE0064D896 /* IDPObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1046111BD151CE0064D896 /* IDPObject.c */; };
+		5A1046171BD15D3A0064D896 /* IDPObjectTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1046151BD15D3A0064D896 /* IDPObjectTests.c */; };
 		5A2D6BAD1BA729290056D643 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D6BAC1BA729290056D643 /* main.c */; };
+		5A6369581BBDA3D8008BC375 /* IDPBirdObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A6369561BBDA3D8008BC375 /* IDPBirdObject.c */; };
 		5A9405341BB30F4A0078C6AA /* IDPStructExample.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A9405321BB30F4A0078C6AA /* IDPStructExample.c */; };
 /* End PBXBuildFile section */
 
@@ -24,9 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A1046111BD151CE0064D896 /* IDPObject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IDPObject.c; sourceTree = "<group>"; };
+		5A1046121BD151CE0064D896 /* IDPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPObject.h; sourceTree = "<group>"; };
+		5A1046151BD15D3A0064D896 /* IDPObjectTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IDPObjectTests.c; sourceTree = "<group>"; };
+		5A1046161BD15D3A0064D896 /* IDPObjectTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPObjectTests.h; sourceTree = "<group>"; };
 		5A2D6BA91BA729290056D643 /* IDPSeptemberGroupCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IDPSeptemberGroupCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2D6BAC1BA729290056D643 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5A2D6BB31BA72E8B0056D643 /* IDPMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPMacros.h; sourceTree = "<group>"; };
+		5A6369561BBDA3D8008BC375 /* IDPBirdObject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IDPBirdObject.c; sourceTree = "<group>"; };
+		5A6369571BBDA3D8008BC375 /* IDPBirdObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPBirdObject.h; sourceTree = "<group>"; };
 		5A9405301BB30C5E0078C6AA /* IDPStudyPlan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IDPStudyPlan; sourceTree = "<group>"; };
 		5A9405321BB30F4A0078C6AA /* IDPStructExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IDPStructExample.c; sourceTree = "<group>"; };
 		5A9405331BB30F4A0078C6AA /* IDPStructExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPStructExample.h; sourceTree = "<group>"; };
@@ -43,6 +52,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A1046101BD151B20064D896 /* IDPObject */ = {
+			isa = PBXGroup;
+			children = (
+				5A1046111BD151CE0064D896 /* IDPObject.c */,
+				5A1046121BD151CE0064D896 /* IDPObject.h */,
+			);
+			path = IDPObject;
+			sourceTree = "<group>";
+		};
+		5A1046141BD15CF10064D896 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5A1046151BD15D3A0064D896 /* IDPObjectTests.c */,
+				5A1046161BD15D3A0064D896 /* IDPObjectTests.h */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		5A2D6BA01BA729290056D643 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +90,23 @@
 		5A2D6BAB1BA729290056D643 /* IDPSeptemberGroupCode */ = {
 			isa = PBXGroup;
 			children = (
+				5A1046141BD15CF10064D896 /* Tests */,
+				5A1046101BD151B20064D896 /* IDPObject */,
+				5A6369551BBDA395008BC375 /* IDPBirdObject */,
 				5A9405311BB30F210078C6AA /* IDPStructExample */,
 				5A2D6BAC1BA729290056D643 /* main.c */,
 				5A2D6BB31BA72E8B0056D643 /* IDPMacros.h */,
 			);
 			path = IDPSeptemberGroupCode;
+			sourceTree = "<group>";
+		};
+		5A6369551BBDA395008BC375 /* IDPBirdObject */ = {
+			isa = PBXGroup;
+			children = (
+				5A6369561BBDA3D8008BC375 /* IDPBirdObject.c */,
+				5A6369571BBDA3D8008BC375 /* IDPBirdObject.h */,
+			);
+			path = IDPBirdObject;
 			sourceTree = "<group>";
 		};
 		5A9405311BB30F210078C6AA /* IDPStructExample */ = {
@@ -136,7 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1046131BD151CE0064D896 /* IDPObject.c in Sources */,
 				5A2D6BAD1BA729290056D643 /* main.c in Sources */,
+				5A1046171BD15D3A0064D896 /* IDPObjectTests.c in Sources */,
+				5A6369581BBDA3D8008BC375 /* IDPBirdObject.c in Sources */,
 				5A9405341BB30F4A0078C6AA /* IDPStructExample.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

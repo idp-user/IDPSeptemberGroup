@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 
+#include "IDPObjectTests.h"
+
 #include "IDPMacros.h"
 #include "IDPStructExample.h"
 
@@ -37,32 +39,34 @@ typedef union {
 
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    IDPPackage package = {1, 2, true, {0.0, 1.0, 0.0, 1.0}};
-    
-    IDPPackageOutput(package);
-    
-    printf("\n");
-    printf("IDPBooleanStruct: %lu", sizeof(IDPBooleanStruct));
-
-    IDPShortIntUnion unionValue;
-
-    printf("\n");
-    printf("%d %d %d",
-           unionValue.intValue,
-           unionValue.bytes[0],
-           unionValue.bytes[1]);
-    
-    unionValue.intValue = 2;
-    
-    
-    printf("\n");
-    printf("%d %d %d",
-           unionValue.intValue,
-           unionValue.bytes[0],
-           unionValue.bytes[1]);
-    
-    unionValue.intValue = -1;
+//    // insert code here...
+//    IDPPackage package = {1, 2, true, {0.0, 1.0, 0.0, 1.0}};
+//    
+//    IDPPackageOutput(package);
+//    
+//    printf("\n");
+//    printf("IDPBooleanStruct: %lu", sizeof(IDPBooleanStruct));
+//
+//    IDPShortIntUnion unionValue;
+//
+//    printf("\n");
+//    printf("%d %d %d",
+//           unionValue.intValue,
+//           unionValue.bytes[0],
+//           unionValue.bytes[1]);
+//    
+//    unionValue.intValue = 2;
+//    
+//    
+//    printf("\n");
+//    printf("%d %d %d",
+//           unionValue.intValue,
+//           unionValue.bytes[0],
+//           unionValue.bytes[1]);
+//    
+//    unionValue.intValue = -1;
+//    
+    IDPPerformIDPObjectTests();
     
     
     return 0;
