@@ -192,6 +192,11 @@ http://jheriko-rtw.blogspot.com/2011/02/know-your-cc-struct-layout-rules.html
 
 MVC1. Objective-C
 
+https://developer.apple.com/library/prerelease/watchos/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+
+https://developer.apple.com/library/prerelease/watchos/documentation/Cocoa/Conceptual/OOP_ObjC/Articles/ooObjectModel.html
+https://developer.apple.com/library/prerelease/watchos/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html
+
 Код должен соответствовать: guides.idapgroup.com
 
 Во время всей работы читаем доку по NSOBject, NSArray, NSMutableArray, NSDictionary, NSMutableDictionary, NSString, NSMutabeString, NSSet, NSMutableSet, NSData, NSMutableData
