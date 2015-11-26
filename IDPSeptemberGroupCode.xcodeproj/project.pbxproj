@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		5A1046131BD151CE0064D896 /* IDPObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1046111BD151CE0064D896 /* IDPObject.c */; };
 		5A1046171BD15D3A0064D896 /* IDPObjectTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1046151BD15D3A0064D896 /* IDPObjectTests.c */; };
+		5A20317E1BFA3E2F006FC2C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A20317D1BFA3E2F006FC2C8 /* main.m */; };
+		5A2031851BFA41A4006FC2C8 /* IDPSyntax.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2031841BFA41A4006FC2C8 /* IDPSyntax.m */; };
 		5A2D6BAD1BA729290056D643 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D6BAC1BA729290056D643 /* main.c */; };
 		5A6369581BBDA3D8008BC375 /* IDPBirdObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A6369561BBDA3D8008BC375 /* IDPBirdObject.c */; };
 		5A9405341BB30F4A0078C6AA /* IDPStructExample.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A9405321BB30F4A0078C6AA /* IDPStructExample.c */; };
+		5AEFE0761BFBA3E800683C01 /* IDPSampleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEFE0751BFBA3E800683C01 /* IDPSampleObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5A2031791BFA3E2F006FC2C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		5A2D6BA71BA729290056D643 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,6 +43,10 @@
 		5A1046121BD151CE0064D896 /* IDPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPObject.h; sourceTree = "<group>"; };
 		5A1046151BD15D3A0064D896 /* IDPObjectTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IDPObjectTests.c; sourceTree = "<group>"; };
 		5A1046161BD15D3A0064D896 /* IDPObjectTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPObjectTests.h; sourceTree = "<group>"; };
+		5A20317B1BFA3E2F006FC2C8 /* ObjectiveC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectiveC; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A20317D1BFA3E2F006FC2C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A2031831BFA41A4006FC2C8 /* IDPSyntax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPSyntax.h; sourceTree = "<group>"; };
+		5A2031841BFA41A4006FC2C8 /* IDPSyntax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPSyntax.m; sourceTree = "<group>"; };
 		5A2D6BA91BA729290056D643 /* IDPSeptemberGroupCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IDPSeptemberGroupCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2D6BAC1BA729290056D643 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5A2D6BB31BA72E8B0056D643 /* IDPMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPMacros.h; sourceTree = "<group>"; };
@@ -39,9 +55,18 @@
 		5A9405301BB30C5E0078C6AA /* IDPStudyPlan */ = {isa = PBXFileReference; lastKnownFileType = text; path = IDPStudyPlan; sourceTree = "<group>"; };
 		5A9405321BB30F4A0078C6AA /* IDPStructExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IDPStructExample.c; sourceTree = "<group>"; };
 		5A9405331BB30F4A0078C6AA /* IDPStructExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPStructExample.h; sourceTree = "<group>"; };
+		5AEFE0741BFBA3E800683C01 /* IDPSampleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPSampleObject.h; sourceTree = "<group>"; };
+		5AEFE0751BFBA3E800683C01 /* IDPSampleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPSampleObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5A2031781BFA3E2F006FC2C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A2D6BA61BA729290056D643 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,10 +95,30 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		5A20317C1BFA3E2F006FC2C8 /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				5AEFE0731BFBA3C100683C01 /* IDPSampleObject */,
+				5A2031821BFA4160006FC2C8 /* ObjCSyntax */,
+				5A20317D1BFA3E2F006FC2C8 /* main.m */,
+			);
+			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		5A2031821BFA4160006FC2C8 /* ObjCSyntax */ = {
+			isa = PBXGroup;
+			children = (
+				5A2031831BFA41A4006FC2C8 /* IDPSyntax.h */,
+				5A2031841BFA41A4006FC2C8 /* IDPSyntax.m */,
+			);
+			path = ObjCSyntax;
+			sourceTree = "<group>";
+		};
 		5A2D6BA01BA729290056D643 = {
 			isa = PBXGroup;
 			children = (
 				5A2D6BAB1BA729290056D643 /* IDPSeptemberGroupCode */,
+				5A20317C1BFA3E2F006FC2C8 /* ObjectiveC */,
 				5A2D6BAA1BA729290056D643 /* Products */,
 				5A9405301BB30C5E0078C6AA /* IDPStudyPlan */,
 			);
@@ -83,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				5A2D6BA91BA729290056D643 /* IDPSeptemberGroupCode */,
+				5A20317B1BFA3E2F006FC2C8 /* ObjectiveC */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +164,35 @@
 			path = IDPStructExample;
 			sourceTree = "<group>";
 		};
+		5AEFE0731BFBA3C100683C01 /* IDPSampleObject */ = {
+			isa = PBXGroup;
+			children = (
+				5AEFE0741BFBA3E800683C01 /* IDPSampleObject.h */,
+				5AEFE0751BFBA3E800683C01 /* IDPSampleObject.m */,
+			);
+			path = IDPSampleObject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5A20317A1BFA3E2F006FC2C8 /* ObjectiveC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A2031811BFA3E2F006FC2C8 /* Build configuration list for PBXNativeTarget "ObjectiveC" */;
+			buildPhases = (
+				5A2031771BFA3E2F006FC2C8 /* Sources */,
+				5A2031781BFA3E2F006FC2C8 /* Frameworks */,
+				5A2031791BFA3E2F006FC2C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveC;
+			productName = ObjectiveC;
+			productReference = 5A20317B1BFA3E2F006FC2C8 /* ObjectiveC */;
+			productType = "com.apple.product-type.tool";
+		};
 		5A2D6BA81BA729290056D643 /* IDPSeptemberGroupCode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A2D6BB01BA729290056D643 /* Build configuration list for PBXNativeTarget "IDPSeptemberGroupCode" */;
@@ -148,6 +220,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "IDAP College";
 				TargetAttributes = {
+					5A20317A1BFA3E2F006FC2C8 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					5A2D6BA81BA729290056D643 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -166,11 +241,22 @@
 			projectRoot = "";
 			targets = (
 				5A2D6BA81BA729290056D643 /* IDPSeptemberGroupCode */,
+				5A20317A1BFA3E2F006FC2C8 /* ObjectiveC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5A2031771BFA3E2F006FC2C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2031851BFA41A4006FC2C8 /* IDPSyntax.m in Sources */,
+				5AEFE0761BFBA3E800683C01 /* IDPSampleObject.m in Sources */,
+				5A20317E1BFA3E2F006FC2C8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A2D6BA51BA729290056D643 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +272,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		5A20317F1BFA3E2F006FC2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A2031801BFA3E2F006FC2C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		5A2D6BAE1BA729290056D643 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -280,6 +388,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5A2031811BFA3E2F006FC2C8 /* Build configuration list for PBXNativeTarget "ObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A20317F1BFA3E2F006FC2C8 /* Debug */,
+				5A2031801BFA3E2F006FC2C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5A2D6BA41BA729290056D643 /* Build configuration list for PBXProject "IDPSeptemberGroupCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
